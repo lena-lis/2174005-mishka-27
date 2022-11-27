@@ -133,6 +133,87 @@
           </li>
         </ul>
       </fieldset>
+
+      <fieldset class="order-form__group">
+        <legend class="order-form__title legend-title">ФИО</legend>
+        <p class="order-form__cell">
+          <label class="order-form__cell-label" for="name">Имя:</label>
+          <input class="order-form__cell-field field" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+        </p>
+        <p class="order-form__cell">
+          <label class="order-form__cell-label" for="surname">Фамилия:</label>
+          <input class="order-form__cell-field field" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
+        </p>
+        <p class="order-form__cell">
+          <label class="order-form__cell-label" for="patronym">Отчество:</label>
+          <input class="order-form__cell-field field" type="text" id="patronym" name="patronym" placeholder="Отчество, если желаете">
+        </p>
+      </fieldset>
+
+      <fieldset class="order-form__group">
+        <legend class="order-form__title legend-title">Тел</legend>
+        <p class="order-form__cell">
+          <label class="visually-hidden order-form__cell-label">Телефон</label>
+          <input class="order-form__cell-field field field--phone" type="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^\+\d{1}\d{3}\d{7}$" required>
+        </p>
+      </fieldset>
+
+      <fieldset class="order-form__group">
+        <legend class="order-form__title legend-title">E-mail</legend>
+        <p class="order-form__cell">
+          <label class="visually-hidden order-form__cell-label">Электронная почта</label>
+          <input class="order-form__cell-field field field--email" type="email" name="customer-email" placeholder="Ваш Email*" required>
+        </p>
+      </fieldset>
+
+      <fieldset class="order-form__group">
+        <legend class="order-form__title legend-title">Доп</legend>
+        <p class="order-form__cell">
+          <label class="visually-hidden">Дополнительные пожелания</label>
+          <textarea class="order-form__cell-field field field--comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </p>
+      </fieldset>
+
+      <p class="order-form__legend">
+        <small>*Поля обязательны для заполнения</small>
+      </p>
+
+      <button class="order-form__button button" type="submit">Отправить заказ</button>
     </form>
   </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__logo main-footer__logo--hidden">
+        <a class="main-footer__logo-link" href="index.html">
+          <img src="img/logos/logo-footer.svg" width="102" height="34" alt="Логотип магазина «Мишка»">
+        </a>
+      </div>
+      <div class="main-footer__social socials">
+        <ul class="socials__list">
+          <li class="social__item">
+            <a href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
