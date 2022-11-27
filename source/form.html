@@ -61,4 +61,30 @@
       </div>
     </nav>
   </header>
+  <main class="main-inner">
+    <h1 class="main-inner__title">Вязание на заказ</h1>
+    <form class="main-inner__form order-form" action="https://echo.htmlacademy.ru/" method="post">
+      <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания!
+        Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <fieldset class="order-form__group">
+        <legend class="order-form__title legend-title">Тип</legend>
+        <ul class="order-form__list">
+          <li class="order-form__item">
+            <label class="order-form__control">
+              <input class="visually-hidden order-form__control-input" type="radio" name="type" value="accessory" checked>
+              <span class="order-form__control-mark"></span>
+              <span class="order-form__control-label">Аксессуар для интерьера</span>
+            </label>
+          </li>
+          <li class="order-form__item">
+            <label class="order-form__control">
+              <input class="visually-hidden order-form__control-input" type="radio" name="type" value="toy">
+              <span class="order-form__control-mark"></span>
+              <span class="order-form__control-label">Детская игрушка</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+  </main>
 </body>
