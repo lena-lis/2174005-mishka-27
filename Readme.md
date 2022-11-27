@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Елена Лисиченок](https://up.htmlacademy.ru/adaptive/27/user/2174005).
-* Наставник: `Неизвестно`.
+* Наставник: [Ярослав Шевцов](https://up.htmlacademy.ru/profession/frontender/15/adaptive/27/user/170516).
 
 ---
 
