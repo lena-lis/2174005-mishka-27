@@ -68,19 +68,67 @@
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <fieldset class="order-form__group">
         <legend class="order-form__title legend-title">Тип</legend>
-        <ul class="order-form__list">
-          <li class="order-form__item">
-            <label class="order-form__control">
-              <input class="visually-hidden order-form__control-input" type="radio" name="type" value="accessory" checked>
-              <span class="order-form__control-mark"></span>
-              <span class="order-form__control-label">Аксессуар для интерьера</span>
+        <ul class="order-form__list type-list">
+          <li class="type-list__item">
+            <label class="type-list__control">
+              <input class="visually-hidden type-list__input" type="radio" name="type" value="accessory" checked>
+              <span class="type-list__mark"></span>
+              <span class="type-list__label">Аксессуар для интерьера</span>
             </label>
           </li>
-          <li class="order-form__item">
-            <label class="order-form__control">
-              <input class="visually-hidden order-form__control-input" type="radio" name="type" value="toy">
-              <span class="order-form__control-mark"></span>
-              <span class="order-form__control-label">Детская игрушка</span>
+          <li class="type-list__item">
+            <label class="type-list__control">
+              <input class="visually-hidden type-list__input" type="radio" name="type" value="toy">
+              <span class="type-list__mark"></span>
+              <span class="type-list__label">Детская игрушка</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="order-form__group">
+        <legend class="order-form__title legend-title">Цвет</legend>
+        <ul class="order-form__list color-list">
+          <li class="color-list__item">
+            <label class="color-list__control">
+              <input class="visually-hidden color-list__input" type="checkbox" name="white" checked>
+              <span class="color-list__mark color-list__mark--checkbox"></span>
+              <span class="color-list__label">Белый</span>
+            </label>
+          </li>
+          <li class="color-list__item">
+            <label class="color-list__control">
+              <input class="visually-hidden color-list__input" type="checkbox" name="gray" checked>
+              <span class="color-list__mark color-list__mark--checkbox"></span>
+              <span class="color-list__label">Серый</span>
+            </label>
+          </li>
+          <li class="color-list__item">
+            <label class="color-list__control">
+              <input class="visually-hidden color-list__input" type="checkbox" name="tiffany">
+              <span class="color-list__mark"></span>
+              <span class="color-list__label">Тиффани</span>
+            </label>
+          </li>
+          <li class="color-list__item">
+            <label class="color-list__control">
+              <input class="visually-hidden color-list__input" type="checkbox" name="black">
+              <span class="color-list__mark"></span>
+              <span class="color-list__label">Черный</span>
+            </label>
+          </li>
+          <li class="color-list__item">
+            <label class="color-list__control">
+              <input class="visually-hidden color-list__input" type="checkbox" name="pink">
+              <span class="color-list__mark"></span>
+              <span class="color-list__label">Розовый</span>
+            </label>
+          </li>
+          <li class="color-list__item">
+            <label class="color-list__control">
+              <input class="visually-hidden color-list__input" type="checkbox" name="orange">
+              <span class="color-list__mark"></span>
+              <span class="color-list__label">Оранжевый</span>
             </label>
           </li>
         </ul>
