@@ -153,24 +153,24 @@
       <fieldset class="order-form__group">
         <legend class="order-form__title legend-title">Тел</legend>
         <p class="order-form__cell">
-          <label class="visually-hidden order-form__cell-label">Телефон</label>
-          <input class="order-form__cell-field field field--phone" type="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^\+\d{1}\d{3}\d{7}$" required>
+          <label class="visually-hidden order-form__cell-label" for="tel">Телефон</label>
+          <input class="order-form__cell-field field field--phone" type="tel" id="tel" name="customer-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^\+\d{1}\d{3}\d{7}$" required>
         </p>
       </fieldset>
 
       <fieldset class="order-form__group">
         <legend class="order-form__title legend-title">E-mail</legend>
         <p class="order-form__cell">
-          <label class="visually-hidden order-form__cell-label">Электронная почта</label>
-          <input class="order-form__cell-field field field--email" type="email" name="customer-email" placeholder="Ваш Email*" required>
+          <label class="visually-hidden order-form__cell-label" for="email">Электронная почта</label>
+          <input class="order-form__cell-field field field--email" type="email" id="email" name="customer-email" placeholder="Ваш Email*" required>
         </p>
       </fieldset>
 
       <fieldset class="order-form__group">
         <legend class="order-form__title legend-title">Доп</legend>
         <p class="order-form__cell">
-          <label class="visually-hidden">Дополнительные пожелания</label>
-          <textarea class="order-form__cell-field field field--comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label class="visually-hidden" for="comment">Дополнительные пожелания</label>
+          <textarea class="order-form__cell-field field field--comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </p>
       </fieldset>
 
