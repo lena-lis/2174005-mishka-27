@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>Магазин 'Мишка' - вязание на заказ</title>
 </head>
 <body class="page__body form-body">
@@ -13,13 +14,12 @@
         <picture>
           <source srcset="img/logos/logo-desktop.svg" type="image/svg+xml" media="(min-width: 1150px)">
           <source srcset="img/logos/logo-tablet.svg" type="image/svg+xml" media="(min-width: 768px)">
-          <source srcset="img/logos/logo-mobile.svg" type="image/svg+xml" media="(max-width: 768px)">
           <img src="img/logos/logo-mobile.svg" alt="Логотип магазина «Мишка»">
         </picture>
       </a>
     </div>
     <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button"></button>
+      <button class="main-navigation__toggle button" type="button"></button>
       <div class="main-navigation__container">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item">
@@ -62,12 +62,15 @@
     </nav>
   </header>
   <main class="main-inner">
-    <h1 class="main-inner__title">Вязание на заказ</h1>
+    <div class="main-inner__title-wrapper">
+      <h1 class="main-inner__title">Вязание на заказ</h1>
+    </div>
     <form class="main-inner__form order-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <fieldset class="order-form__group">
-        <legend class="order-form__title legend-title">Тип</legend>
+
+      <fieldset class="order-form__group order-form__group--type">
+        <legend class="order-form__title order-form__title--type legend-title">Тип</legend>
         <ul class="order-form__list type-list">
           <li class="type-list__item">
             <label class="type-list__control">
@@ -87,7 +90,7 @@
       </fieldset>
 
       <fieldset class="order-form__group">
-        <legend class="order-form__title legend-title">Цвет</legend>
+        <legend class="order-form__title order-form__title--color legend-title">Цвет</legend>
         <ul class="order-form__list color-list">
           <li class="color-list__item">
             <label class="color-list__control">
@@ -144,7 +147,7 @@
           <label class="order-form__cell-label" for="surname">Фамилия:</label>
           <input class="order-form__cell-field field" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
         </p>
-        <p class="order-form__cell">
+        <p class="order-form__cell order-form__cell--patronym">
           <label class="order-form__cell-label" for="patronym">Отчество:</label>
           <input class="order-form__cell-field field" type="text" id="patronym" name="patronym" placeholder="Отчество, если желаете">
         </p>
@@ -167,7 +170,7 @@
       </fieldset>
 
       <fieldset class="order-form__group">
-        <legend class="order-form__title legend-title">Доп</legend>
+        <legend class="order-form__title order-form__title--comment legend-title">Доп</legend>
         <p class="order-form__cell">
           <label class="visually-hidden" for="comment">Дополнительные пожелания</label>
           <textarea class="order-form__cell-field field field--comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
