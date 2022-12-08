@@ -1,33 +1,62 @@
 .hero {
-  background-color: #ececec;
-  background-image: url("/img/hero/hero-mobile.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
+  background-color: #f9f9f9;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero__container {
-  padding-top: 73px;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero/hero-mobile.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    min-height: 746px;
+    margin: 0 auto;
+
+    background-image: url("../img/hero/hero-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    min-height: 763px;
+
+    background-image: url("../img/hero/hero-desktop.jpg");
+  }
 }
 
 .hero__title {
   margin-top: 0;
   margin-bottom: 120px;
+  padding-top: 73px;
 
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 158px;
+  }
 }
 
 .hero__list {
-  margin: 0;
-  padding: 0;
+  .list-clean;
 
-  list-style-type: none;
-}
-
-@media (min-width: @tablet-width) {
-  .hero {
-    background-image: url("/img/hero/hero-tablet.jpg");
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+    margin-bottom: 0;
   }
 }
+
+
 
