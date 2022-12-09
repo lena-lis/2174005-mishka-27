@@ -1,7 +1,13 @@
 .quality-list__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: [dt] 97px [dd] 1fr;
+
+  padding: 10px 0;
 
   line-height: 20px;
-
   border-bottom: 1px solid #ececec;
+}
+
+.quality-list__definition {
+  margin: 0;
 }

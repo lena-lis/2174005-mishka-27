@@ -1,7 +1,19 @@
 .features-list {
-  line-height: 20px;
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 325px 333px;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    grid-auto-flow: column;
+  }
 }
 
 .features-list__item {
   padding-top: 83px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
