@@ -182,7 +182,11 @@
         </table>
         <div class="contacts__map-container">
           <!--Карта как изображение вставлена временно-->
-          <img src="img/maps/map-mobile.png" alt="Карта с отмеченным оффлайн-магазином">
+          <picture>
+            <source srcset="img/maps/map-desktop.png" type="image/png" media="(min-width: 1150px)">
+            <source srcset="img/maps/map-tablet.png" type="image/png" media="(min-width: 768px)">
+            <img src="img/maps/map-mobile.png" alt="Карта с отмеченным оффлайн-магазином">
+          </picture>
         </div>
         <button class="contacts__button button" type="button">Напишите нам</button>
       </div>

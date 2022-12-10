@@ -3,12 +3,33 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
+
+  tbody {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      column-gap: 51px;
+    }
+
+    @media (min-width: @desktop-width) {
+      flex-direction: column;
+      row-gap: 23px;
+    }
+  }
 }
 
 .contacts-table__row {
   display: grid;
   grid-template-columns: [td] 75px [td] 183px;
   column-gap: 2px;
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: [td] 75px [td] 219px;
+    column-gap: 3px;
+  }
 }
 
 .contacts-table__link {
@@ -21,4 +42,8 @@
 
 .contacts-table__cell--value-address {
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    width: max-content;
+  }
 }
