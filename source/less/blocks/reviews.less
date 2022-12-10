@@ -10,9 +10,24 @@
 
 .reviews__container {
   @media (min-width: @tablet-width) {
+    box-sizing: border-box;
     position: relative;
-    width: 668px;
+    width: 768px;
+    min-height: 457px;
     margin: 0 auto;
+    padding: 0 50px;
+
+    background-color: #ffffff;
+    background-image: url("../img/reviews/review-tablet.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1118px;
+    padding-left: 170px;
+    padding-right: 66px;
   }
 }
 
@@ -23,6 +38,14 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 38px;
     padding-top: 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
+    padding-top: 78px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -48,22 +71,33 @@
     padding-right: 20px;
     font-size: 17px;
   }
+
+  @media (min-width: @tdesktop-width) {
+    margin-bottom: 44px;
+    padding-right: 62px;
+  }
 }
 
 .reviews__author-info {
   font-style: normal;
-  @media (min-width: @tablet-width) {
-    font-size: 18px;
-  }
 }
 
 .reviews__author-name {
   display: block;
+
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-nickname {
-  line-height: 30px;
   font-weight: 400;
+  line-height: 30px;
   color: #444444;
 }
 
@@ -75,12 +109,17 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 0;
-    bottom: 15px;
+    right: 50px;
+    bottom: 66px;
 
     grid-template-columns: 50px 50px;
     column-gap: 37px;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 86px;
+    bottom: 111px;
   }
 }
 
@@ -91,9 +130,13 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 79px;
-    right: 0;
+    right: 50px;
 
     width: 175px;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 66px;
   }
 }
