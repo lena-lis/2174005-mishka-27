@@ -8,15 +8,50 @@
   min-height: 178px;
 
   background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    min-width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1050px;
+  }
 }
 
 .main-inner__title {
   margin: auto;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 101px;
+    padding-bottom: 77px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 102px;
+    padding-bottom: 113px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .main-inner__form {
   box-sizing: border-box;
   padding: 17px 30px 55px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 668px;
+    margin: 54px auto 50px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    margin-top: 98px;
+    padding-left: 60px;
+  }
 }
