@@ -2,6 +2,22 @@
   box-sizing: border-box;
   width: 260px;
   min-height: 374px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 334px);
+
+    width: 668px;
+    min-height: 334px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+
+    width: 316px;
+    min-height: 659px;
+  }
 }
 
 .card__image {
@@ -11,17 +27,36 @@
 .card__info {
   padding: 26px 27px;
   border: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 32px 26px 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100%;
+    padding: 26px 27px;
+  }
 }
 
 .card__title {
   margin-top: 0;
   margin-bottom: 8px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .card__title-link {
   font-size: 17px;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .card__description {
@@ -32,15 +67,29 @@
   line-height: 30px;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .card__order {
   display: flex;
   justify-content: space-between;
+  padding-top: 23px;
+  border-top: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .card__price {
   font-size: 15px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .cart-button {

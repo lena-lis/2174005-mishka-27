@@ -1,9 +1,28 @@
 .catalog {
   padding: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.catalog__container {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .catalog__list {
   .list-clean;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 316px);
+    gap: 51px;
+
+    width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .catalog__item {
@@ -12,4 +31,12 @@
 
 .catalog__item:not(:last-of-type) {
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }

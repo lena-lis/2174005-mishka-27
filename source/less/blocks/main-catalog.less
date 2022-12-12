@@ -1,7 +1,5 @@
 .main-catalog {
   flex-grow: 1;
-  padding: 30px;
-  padding-bottom: 58px;
 }
 
 .main-catalog__title-wrapper {
@@ -10,10 +8,22 @@
   min-height: 178px;
 
   background-color: #f1f1f1;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .main-catalog__title {
   margin: auto;
   font-size: 27px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 101px;
+    padding-bottom: 75px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
