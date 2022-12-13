@@ -1,0 +1,147 @@
+.bestseller {
+  padding: 30px;
+  padding-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 96px;
+  }
+}
+
+.bestseller__container {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 292px 334px;
+    grid-template-rows: 88px 308px 109px;
+    column-gap: 42px;
+
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 175px 292px 58px 525px;
+    grid-template-rows: 153px 374px 109px;
+
+    width: 1050px;
+  }
+}
+
+.bestseller__header {
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    margin-bottom: 35px;
+  }
+}
+
+.bestseller__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.bestseller__product-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+}
+
+.bestseller__card {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444444;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.bestseller__list {
+  margin: 0;
+}
+
+.bestseller__image-wrapper {
+  padding: 27px 0;
+
+  img {
+    display: block;
+    object-fit: contain;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 4 / -1;
+    grid-row: 1 / -1;
+  }
+}
+
+.bestseller__description {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.bestseller__footer {
+  @media (min-width: @desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 3 / -1;
+  }
+}
+
+.bestseller__price {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  color: #444444;
+}
+
+.bestseller__button {
+  width: 100%;
+  padding: 16px 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
+}

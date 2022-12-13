@@ -1,0 +1,21 @@
+.offer-list {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.offer-list__item:not(:last-of-type) {
+  @media (min-width: @desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+.offer-list__item-link {
+  display: block;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #000000;
+  text-decoration: none;
+}

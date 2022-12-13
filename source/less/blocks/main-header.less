@@ -1,0 +1,35 @@
+.main-header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.main-header__logo-container {
+  margin: 22px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 22px auto 22px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 8px auto;
+  }
+}
+
+.main-header__logo-image {
+  display: block;
+}
+

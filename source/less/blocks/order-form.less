@@ -1,0 +1,164 @@
+.order-form__description {
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  font-size: 13px;
+  font-weight: 400;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto 63px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.order-form__group-wrapper:nth-of-type(even) {
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
+.order-form__group {
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 164px 1fr;
+    column-gap: 5px;
+
+    width: 668px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    grid-template-columns: 90px 1fr;
+    column-gap: 23px;
+
+    width: 1050px;
+    padding-left: 62px;
+  }
+}
+
+.order-form__group--color {
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.order-form__group--name .order-form__cell {
+  display: grid;
+  grid-template-columns: min-content auto;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.order-form__cell {
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 173px;
+  }
+}
+
+.order-form__cell--patronym {
+  margin-bottom: 0;
+}
+
+.order-form__group:last-of-type .order-form__cell {
+  margin-bottom: 0;
+}
+
+.order-form__title {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.order-form__title--type {
+  margin-bottom: 30px;
+}
+
+.order-form__title--color {
+  margin-bottom: 25px;
+}
+
+.order-form__title--comment {
+  margin-bottom: 22px;
+}
+
+.order-form__cell-label {
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    padding-right: 25px;
+    font-size: 19px;
+  }
+}
+
+.order-form__button-wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 668px;
+    margin: 0 auto;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.order-form__legend {
+  margin-top: 17px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 173px;
+  }
+}
+
+.order-form__legend-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.order-form__cell-field {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.order-form__button {
+  padding: 18px 40px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+  }
+}

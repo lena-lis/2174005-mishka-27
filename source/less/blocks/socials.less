@@ -1,0 +1,22 @@
+.socials__list {
+  .list-clean();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.socials__item {
+  min-width: 28px;
+  min-height: 22px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 29px;
+  }
+}
+
+.socials__item:last-of-type {
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+  }
+}
