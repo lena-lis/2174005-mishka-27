@@ -77,6 +77,7 @@
 }
 
 .main-navigation--opened .main-navigation__toggle-icon {
+  position: absolute;
   top: 38px;
   right: 20px;
   width: 20px;
@@ -86,7 +87,7 @@
   &::before,
   &::after {
     position: absolute;
-    right: 1px;
+    right: -4px;
     width: 27px;
     height: 2px;
     content: "";
@@ -94,13 +95,13 @@
   }
 
   &::before {
-    top: 40px;
+    top: 0;
     transform: rotate(45deg);
     transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   &::after {
-    bottom: 37px;
+    bottom: 0;
     transform: rotate(-45deg);
     transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -137,6 +138,14 @@
 
 .main-navigation__delivery {
   display: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: block;
