@@ -21,6 +21,15 @@
     line-height: 30px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding: 25px 36px 39px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: transform 250ms;
+  }
+
   &--decor:hover,
   &--decor:active {
     background-color: #59d5bc;
