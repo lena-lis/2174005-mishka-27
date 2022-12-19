@@ -85,7 +85,7 @@
       </div>
     </section>
 
-    <section class="bestseller bestseller--zigzag">
+    <section class="bestseller wave-thin">
       <div class="bestseller__container">
         <header class="bestseller__header">
           <h2 class="bestseller__title">Товар недели</h2>
@@ -137,15 +137,13 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews wave-thin wave-thin--reviews">
       <div class="reviews__container slider">
         <h2 class="reviews__title slider__title">Отзывы</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
-              у популярных инстамамочек.
-              В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как<br>у популярных инстамамочек.
+            <br>В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
             <cite class="reviews__author-info">
               <span class="reviews__author-name">Анастасия Красильникова</span>
               <span class="reviews__author-nickname">@misssssiskras</span>
@@ -154,9 +152,15 @@
         </div>
         <div class="reviews__controls slider__controls">
           <button class="slider__button slider__button--prev button" type="button">
+            <svg class="slider__button-icon" aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/>
+            </svg>
             <span class="visually-hidden">Назад</span>
           </button>
           <button class="slider__button slider__button--next button" type="button">
+            <svg class="slider__button-icon" aria-hidden="true" focusable="false" width="50" height="26" viewBox="0 0 50 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M50 11H7.7l8.1-8.2L13 0 0 13l13 13 2.8-2.8L7.7 15H50v-4Z"/>
+            </svg>
             <span class="visually-hidden">Вперед</span>
           </button>
         </div>
@@ -181,12 +185,9 @@
           </tr>
         </table>
         <div class="contacts__map-container">
-          <!--Карта как изображение вставлена временно-->
-          <picture>
-            <source srcset="img/maps/map-desktop.png" type="image/png" media="(min-width: 1150px)">
-            <source srcset="img/maps/map-tablet.png" type="image/png" media="(min-width: 768px)">
-            <img src="img/maps/map-mobile.png" alt="Карта с отмеченным оффлайн-магазином">
-          </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123886!2d30.320894615957386!3d59.93879686904808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1671456435126!5m2!1sru!2sru"
+           width="320" height="455" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис компании по адресу ул. Большая Конюшеннаяд. 19/8, офис 101, Санкт-Петербург">
+          </iframe>
         </div>
         <button class="contacts__button button button--primary" type="button">Напишите нам</button>
       </div>

@@ -26,9 +26,13 @@
   grid-template-columns: [td] 75px [td] 183px;
   column-gap: 2px;
 
+  @media (min-width: @tablet-width) {
+    grid-template-columns: [td] 75px [td] 220px;
+    column-gap: 3px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-template-columns: [td] 75px [td] 219px;
-    column-gap: 3px;
   }
 }
 

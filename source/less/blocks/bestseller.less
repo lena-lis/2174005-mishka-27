@@ -13,33 +13,7 @@
   }
 }
 
-.bestseller--zigzag {
-  position: relative;
-}
 
-.bestseller--zigzag::after {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  display: block;
-  width: 100%;
-  height: 6px;
-  background-image: url(../img/bestseller/zigzag.svg);
-  background-position-x: center;
-  background-repeat: repeat-x;
-  background-size: auto 6px;
-  content: "";
-
-  @media (min-width: @tablet-width) {
-    top: 110%;
-    height: 17px;
-    background-size: auto 17px;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
 
 
 .bestseller__container {
@@ -67,7 +41,7 @@
       top: 111%;
       width: 100%;
       height: 23px;
-      background-image: url(../img/bestseller/zigzag.svg);
+      background-image: url(../img/bestseller/wave-thin.svg);
       background-position-x: center;
       background-repeat: repeat-x;
       background-size: auto 23px;
