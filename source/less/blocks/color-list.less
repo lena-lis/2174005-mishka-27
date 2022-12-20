@@ -5,11 +5,29 @@
     display: grid;
     grid-template-columns: 218px 239px;
     column-gap: 44px;
+    row-gap: 24px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 248px);
     column-gap: 14px;
+  }
+}
+
+.color-list__item {
+  display: flex;
+  min-height: 38px;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }
