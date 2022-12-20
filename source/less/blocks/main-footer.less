@@ -28,6 +28,17 @@
   @media (max-width: @mobile-width-only) {
     display: none;
   }
+
+  color: #444444;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .main-footer__socials {
@@ -43,15 +54,8 @@
 }
 
 .main-footer__copyright {
-  box-sizing: border-box;
-  padding: 22px 39px;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    padding-right: 52px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-right: 55px;
+  @media (max-width: @mobile-width-only) {
+    box-sizing: border-box;
+    padding: 22px 39px;
   }
 }
