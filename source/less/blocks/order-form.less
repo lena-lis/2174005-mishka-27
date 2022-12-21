@@ -74,22 +74,11 @@
   }
 }
 
-.order-form__group--color {
+.order-form__group--color,
+.order-form__group--contacts {
   @media (min-width: @tablet-width) {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  @media (min-width: @desktop-width) {
-    padding-right: 0;
-  }
-}
-
-.order-form__group--name .order-form__cell {
-  display: grid;
-  grid-template-columns: min-content auto;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
   }
 }
 
@@ -97,20 +86,7 @@
   .list-clean;
 }
 
-.order-form__cell {
-  margin-top: 0;
-  margin-bottom: 34px;
-
-  &--patronym {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-right: 173px;
-  }
-}
-
-.order-form__group .order-form__cell:last-of-type {
+.order-form__group .order-form__item:last-of-type {
   margin-bottom: 0;
 }
 
@@ -133,6 +109,12 @@
   }
 }
 
+.order-form__group--name .order-form__title {
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .order-form__title-line {
   @media (max-width: @mobile-width-only) {
     position: relative;
@@ -150,19 +132,32 @@
   }
 }
 
-.order-form__cell .order-form__title-line {
+.order-form__item .order-form__title-line {
   margin-bottom: 5px;
 }
 
-.order-form__cell-label {
-  line-height: 18px;
+.order-form__item {
+  margin-top: 0;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    align-self: center;
-    padding-right: 25px;
-    font-size: 19px;
+    display: grid;
+    grid-template-columns: 164px 1fr;
+    column-gap: 5px;
+
+    width: 668px;
+    margin: 0 auto 50px;
+    }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    grid-template-columns: 90px 1fr;
+    column-gap: 23px;
+
+    width: 1050px;
   }
 }
+
 
 .order-form__button-wrapper {
   @media (min-width: @tablet-width) {
@@ -211,5 +206,43 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 175px;
+  }
+}
+
+.order-form__field-wrapper .field {
+  padding-right: 62px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
+.order-form__field-wrapper {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    content: "";
+  }
+
+  &--phone::after {
+    top: 11px;
+    right: 17px;
+    width: 25px;
+    height: 24px;
+
+    background-image: url("../img/icons/phone.svg");
+  }
+
+  &--email::after {
+    top: 16px;
+    right: 15px;
+    width: 32px;
+    height: 21px;
+
+    background-image: url("../img/icons/mail.svg");
   }
 }

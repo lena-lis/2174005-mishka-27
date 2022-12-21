@@ -157,42 +157,46 @@
         <div class="order-form__title-line">
           <legend class="order-form__title">ФИО</legend>
         </div>
-        <div class="order-form__cell-wrapper">
-          <p class="order-form__cell">
-            <label class="order-form__cell-label" for="name">Имя:</label>
-            <input class="order-form__cell-field field" type="text" id="name" name="name" placeholder="Введите ваше имя*"
+        <ul class="order-form__list name-list">
+          <li class="name-list__item">
+            <label class="name-list__label" for="name">Имя:</label>
+            <input class="field" type="text" id="name" name="name" placeholder="Введите ваше имя*"
               required>
-          </p>
-          <p class="order-form__cell">
-            <label class="order-form__cell-label" for="surname">Фамилия:</label>
-            <input class="order-form__cell-field field" type="text" id="surname" name="surname" placeholder="Укажите фамилию*"
+          </li>
+          <li class="name-list__item">
+            <label class="name-list__label" for="surname">Фамилия:</label>
+            <input class="field" type="text" id="surname" name="surname" placeholder="Укажите фамилию*"
               required>
-          </p>
-          <p class="order-form__cell order-form__cell--patronym">
-            <label class="order-form__cell-label" for="patronym">Отчество:</label>
-            <input class="order-form__cell-field field" type="text" id="patronym" name="patronym"
+          </li>
+          <li class="name-list__item">
+            <label class="name-list__label" for="patronym">Отчество:</label>
+            <input class="field" type="text" id="patronym" name="patronym"
               placeholder="Отчество, если желаете">
-          </p>
-        </div>
+          </li>
+        </ul>
       </fieldset>
 
       <div class="order-form__group-wrapper">
-        <fieldset class="order-form__group">
+        <fieldset class="order-form__group order-form__group--contacts">
           <legend class="visually-hidden">Ваши контакты</legend>
           <ul class="order-form__list">
-            <li class="order-form__cell">
+            <li class="order-form__item">
               <div class="order-form__title-line">
                 <label class="order-form__title" for="tel">Тел</label>
               </div>
-              <input class="order-form__cell-field field field--phone" type="tel" id="tel" name="customer-phone"
+              <div class="order-form__field-wrapper order-form__field-wrapper--phone">
+                <input class="order-form__field field" type="tel" id="tel" name="customer-phone"
                 placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="^\+\d{1}\d{3}\d{7}$" required>
-            </li>
-            <li class="order-form__cell">
+              </div>
+              </li>
+            <li class="order-form__item">
               <div class="order-form__title-line">
                 <label class="order-form__title" for="email">E-mail</label>
               </div>
-              <input class="order-form__cell-field field field--email" type="email" id="email" name="customer-email"
+              <div class="order-form__field-wrapper order-form__field-wrapper--email">
+                <input class="order-form__field field" type="email" id="email" name="customer-email"
                 placeholder="Ваш Email*" required>
+              </div>
             </li>
         </ul>
         </fieldset>
@@ -202,7 +206,7 @@
         <div class="order-form__title-line">
           <label class="order-form__title" for="comment">Доп</label>
         </div>
-        <textarea class="order-form__cell-field field field--comment" id="comment" name="comment"
+        <textarea class="order-form__field field field--comment" id="comment" name="comment"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
 
