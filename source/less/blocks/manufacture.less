@@ -28,19 +28,43 @@
 }
 
 .manufacture__title {
-  width: min-content;
+  position: relative;
   margin: 0;
-  padding: 22px 49px 26px 91px;
+  padding: 22px 40px 26px 91px;
+
+  &::before {
+    position: absolute;
+    top: 34px;
+    left: 35px;
+
+    width: 32px;
+    height: 22px;
+
+    background-color: transparent;
+    background-image: url("../img/icons/video.svg");
+
+    content: "";
+  }
 
   @media (min-width: @tablet-width) {
     width: auto;
     padding: 41px 107px 25px;
+
+    &::before {
+      top: 39px;
+      left: 42px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 2 / -1;
     grid-row: 1;
     padding: 96px 79px 28px;
+
+    &::before {
+      top: 47px;
+      left: 79px;
+    }
   }
 }
 
