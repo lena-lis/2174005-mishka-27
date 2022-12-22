@@ -6,6 +6,11 @@
 .main-header__container {
   display: flex;
   flex-direction: column;
+  min-height: 79px;
+
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+  }
 
   @media (min-width: @tablet-width) {
     width: 668px;
@@ -29,7 +34,16 @@
   }
 }
 
+.main-header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-header__logo-image {
   display: block;
 }
-

@@ -1,3 +1,20 @@
 .type-list {
   .list-clean;
 }
+
+.type-list__item {
+  display: flex;
+  min-height: 42px;
+
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 52px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}

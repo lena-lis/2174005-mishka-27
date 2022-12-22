@@ -11,6 +11,16 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 67px;
+
+    &.wave-thick::after {
+      top: 90%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &.wave-thick::after {
+      top: 88%;
+    }
   }
 }
 
@@ -25,5 +35,13 @@
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 102px;
+    padding-bottom: 113px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

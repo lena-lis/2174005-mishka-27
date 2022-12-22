@@ -1,0 +1,34 @@
+.name-list {
+  @media (min-width: @desktop-width) {
+    padding-right: 173px;
+  }
+}
+
+.name-list__item {
+  display: grid;
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: min-content auto;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+.name-list__label {
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    padding-right: 25px;
+    font-size: 19px;
+  }
+}

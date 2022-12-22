@@ -13,9 +13,19 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 1050px;
+    padding-right: 171px;
+    padding-left: 175px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
-.order-form__group-wrapper:nth-of-type(even) {
+.order-form__group-wrapper {
   @media (min-width: @tablet-width) {
     background-color: #f1f1f1;
   }
@@ -27,14 +37,31 @@
   padding: 0;
   border: none;
 
+  @media (max-width: @mobile-width-only) {
+    &--type .order-form__title-line {
+      margin-bottom: 30px;
+    }
+
+    &--color .order-form__title-line {
+      margin-bottom: 25px;
+    }
+
+    &--name .order-form__title-line {
+      margin-bottom: 28px;
+    }
+
+    &--comment .order-form__title-line {
+      margin-bottom: 23px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 164px 1fr;
     column-gap: 5px;
 
     width: 668px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -44,69 +71,100 @@
 
     width: 1050px;
     padding-left: 62px;
+
+    &--comment {
+      padding-right: 173px;
+    }
   }
 }
 
-.order-form__group--color {
+.order-form__group--color,
+.order-form__group--contacts {
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.order-form__group--contacts {
   @media (min-width: @desktop-width) {
-    padding-right: 0;
+    display: block;
+
+    & .order-form__list {
+      padding-right: 173px;
+    }
   }
 }
 
-.order-form__group--name .order-form__cell {
-  display: grid;
-  grid-template-columns: min-content auto;
-
-  @media (min-width: @desktop-width) {
-    display: flex;
-  }
+.order-form__list {
+  .list-clean;
 }
 
-.order-form__cell {
-  margin-top: 0;
-  margin-bottom: 34px;
-
-  @media (min-width: @desktop-width) {
-    padding-right: 173px;
-  }
-}
-
-.order-form__cell--patronym {
-  margin-bottom: 0;
-}
-
-.order-form__group:last-of-type .order-form__cell {
+.order-form__group .order-form__item:last-of-type {
   margin-bottom: 0;
 }
 
 .order-form__title {
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #63d1bb;
+
+  @media (max-width: @mobile-width-only) {
+    padding-right: 25px;
+    background-color: #ffffff;
+  }
+
   @media (min-width: @tablet-width) {
     display: inline-block;
     float: left;
+    margin-top: 18px;
   }
 }
 
-.order-form__title--type {
-  margin-bottom: 30px;
+.order-form__title-line {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    display: flex;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      background-color: #63d1bb;
+      content: "";
+      z-index: -1;
+    }
+  }
 }
 
-.order-form__title--color {
-  margin-bottom: 25px;
+.order-form__item .order-form__title-line {
+  margin-bottom: 5px;
 }
 
-.order-form__title--comment {
-  margin-bottom: 22px;
-}
-
-.order-form__cell-label {
-  line-height: 18px;
+.order-form__item {
+  margin-top: 0;
+  margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
-    align-self: center;
-    padding-right: 25px;
-    font-size: 19px;
+    display: grid;
+    grid-template-columns: 164px 1fr;
+    column-gap: 5px;
+
+    width: 668px;
+    margin: 0 auto 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    grid-template-columns: 90px 1fr;
+    column-gap: 23px;
+    width: 100%;
   }
 }
+
 
 .order-form__button-wrapper {
   @media (min-width: @tablet-width) {
@@ -114,6 +172,7 @@
     width: 668px;
     margin: 0 auto;
   }
+
   @media (min-width: @desktop-width) {
     width: 1050px;
   }
@@ -149,16 +208,50 @@
   }
 }
 
-.order-form__cell-field {
-  @media (min-width: @tablet-width) {
-    width: 100%;
-  }
-}
-
 .order-form__button {
   padding: 18px 40px;
 
   @media (min-width: @desktop-width) {
     margin-left: 175px;
   }
+}
+
+.order-form__field-wrapper .field {
+  padding-right: 62px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f1f1f1;
+  }
+}
+
+.order-form__field-wrapper {
+  position: relative;
+}
+
+.order-form__icon {
+  position: absolute;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  content: "";
+
+  &--phone {
+    top: 11px;
+    right: 17px;
+    width: 25px;
+    height: 24px;
+  }
+
+  &--email {
+    top: 16px;
+    right: 15px;
+    width: 32px;
+    height: 21px;
+  }
+}
+
+.order-form__field:hover + .order-form__icon,
+.order-form__field:focus + .order-form__icon {
+  color: #62d1ba;
+  opacity: 1;
 }

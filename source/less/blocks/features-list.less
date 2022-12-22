@@ -9,11 +9,87 @@
 }
 
 .features-list__item {
+  position: relative;
   padding-top: 83px;
   line-height: 20px;
 
+  &::before {
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--eco::before {
+    top: 28px;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/features/flower.svg");
+  }
+
+  &--style::before {
+    top: 30px;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/features/carpet.svg");
+  }
+
+  &--like::before {
+    top: 35px;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/features/heart.svg");
+  }
+
+  &--handmade::before {
+    top: 32px;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/features/yarn.svg");
+  }
+
+  &--native::before {
+    top: 33px;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/features/rocket.svg");
+  }
+
+  &--present::before {
+    top: 32px;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/features/present.svg");
+  }
+
+
   @media (min-width: @tablet-width) {
+    padding-top: 110px;
     font-size: 20px;
     line-height: 22px;
+
+    &--eco::before {
+      top: 41px;
+    }
+
+    &--style::before {
+      top: 57px;
+    }
+
+    &--like::before {
+      top: 63px;
+    }
+
+    &--handmade::before {
+      top: 46px;
+    }
+
+    &--native::before {
+      top: 59px;
+    }
+
+    &--present::before {
+      top: 58px;
+    }
   }
 }

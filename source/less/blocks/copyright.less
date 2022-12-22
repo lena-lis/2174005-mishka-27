@@ -1,4 +1,33 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  column-gap: 27px;
+}
+
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
+}
+
+.copyright__link {
+  position: relative;
+  display: block;
+  min-width: 27px;
+  min-height: 34px;
+  color: #63d1bb;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.copyright__logo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

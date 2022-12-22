@@ -26,9 +26,13 @@
   grid-template-columns: [td] 75px [td] 183px;
   column-gap: 2px;
 
+  @media (min-width: @tablet-width) {
+    grid-template-columns: [td] 75px [td] 220px;
+    column-gap: 3px;
+  }
+
   @media (min-width: @desktop-width) {
     grid-template-columns: [td] 75px [td] 219px;
-    column-gap: 3px;
   }
 }
 
@@ -38,9 +42,18 @@
   text-decoration-color: #62d1ba;
   text-underline-offset: 5px;
   color: #444444;
+
+  &:hover {
+    color: #62d1ba;
+  }
+
+  &:active {
+    color: #62d1ba;
+    text-decoration: none;
+  }
 }
 
-.contacts-table__cell--value-address {
+.contacts-table__address {
   font-style: normal;
 
   @media (min-width: @tablet-width) {

@@ -12,12 +12,21 @@
   @media (min-width: @tablet-width) {
     min-width: 668px;
     margin: 0 auto;
+
+    &.wave-thick::after {
+      top: 90%;
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 1050px;
+
+    &.wave-thick::after {
+      top: 88%;
+    }
   }
 }
+
 
 .main-inner__title {
   margin: auto;
