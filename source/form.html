@@ -80,9 +80,9 @@
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
       <fieldset class="order-form__group order-form__group--type">
-        <div class="order-form__title-line">
-          <legend class= "order-form__title">Тип</legend>
-        </div>
+        <legend class= "order-form__title">
+          <span class="order-form__title-line">Тип</span>
+        </legend>
         <ul class="order-form__list type-list">
           <li class="type-list__item">
             <label class="type-list__control radio">
@@ -103,9 +103,9 @@
 
       <div class="order-form__group-wrapper">
         <fieldset class="order-form__group order-form__group--color">
-          <div class="order-form__title-line">
-            <legend class="order-form__title order-form__title--color">Цвет</legend>
-          </div>
+          <legend class="order-form__title">
+            <span class="order-form__title-line">Цвет</span>
+          </legend>
           <ul class="order-form__list color-list">
             <li class="color-list__item">
               <label class="color-list__control checkbox">
@@ -154,9 +154,9 @@
       </div>
 
       <fieldset class="order-form__group order-form__group--name">
-        <div class="order-form__title-line">
-          <legend class="order-form__title">ФИО</legend>
-        </div>
+        <legend class="order-form__title">
+          <span class="order-form__title-line">ФИО</span>
+        </legend>
         <ul class="order-form__list name-list">
           <li class="name-list__item">
             <label class="name-list__label" for="name">Имя:</label>
@@ -181,8 +181,8 @@
           <legend class="visually-hidden">Ваши контакты</legend>
           <ul class="order-form__list">
             <li class="order-form__item">
-              <div class="order-form__title-line">
-                <label class="order-form__title" for="tel">Тел</label>
+              <div class="order-form__title">
+                <label class="order-form__title-line order-form__title-line--phone" for="tel">Тел</label>
               </div>
               <div class="order-form__field-wrapper order-form__field-wrapper--phone">
                 <input class="order-form__field field" type="tel" id="tel" name="customer-phone"
@@ -193,8 +193,8 @@
               </div>
               </li>
             <li class="order-form__item">
-              <div class="order-form__title-line">
-                <label class="order-form__title" for="email">E-mail</label>
+              <div class="order-form__title">
+                <label class="order-form__title-line order-form__title-line--email" for="email">E-mail</label>
               </div>
               <div class="order-form__field-wrapper order-form__field-wrapper--email">
                 <input class="order-form__field field" type="email" id="email" name="customer-email"
@@ -209,8 +209,8 @@
       </div>
 
       <div class="order-form__group order-form__group--comment">
-        <div class="order-form__title-line">
-          <label class="order-form__title" for="comment">Доп</label>
+        <div class="order-form__title">
+          <label class="order-form__title-line" for="comment">Доп</label>
         </div>
         <textarea class="order-form__field field field--comment" id="comment" name="comment"
           placeholder="Опишите все ваши пожелания к заказу"></textarea>
