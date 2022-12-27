@@ -40,18 +40,22 @@
   @media (max-width: @mobile-width-only) {
     &--type .order-form__title-line {
       margin-bottom: 30px;
+      padding-right: 22px;
     }
 
     &--color .order-form__title-line {
       margin-bottom: 25px;
+      padding-right: 16px;
     }
 
     &--name .order-form__title-line {
       margin-bottom: 28px;
+      padding-right: 18px;
     }
 
     &--comment .order-form__title-line {
       margin-bottom: 23px;
+      padding-right: 23px;
     }
   }
 
@@ -107,36 +111,50 @@
 .order-form__title {
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    float: left;
+  }
+}
+
+.order-form__title-line {
   line-height: 16px;
   text-transform: uppercase;
   color: #63d1bb;
 
   @media (max-width: @mobile-width-only) {
-    padding-right: 25px;
-    background-color: #ffffff;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: inline-block;
-    float: left;
-    margin-top: 18px;
-  }
-}
-
-.order-form__title-line {
-  @media (max-width: @mobile-width-only) {
     position: relative;
-    display: flex;
+    display: inline-block;
+    background-color: #ffffff;
+
+    &--phone {
+      padding-right: 28px;
+    }
+
+    &--email {
+      padding-right: 19px;
+
+      &::before {
+        width: 182px;
+      }
+    }
 
     &::before {
       position: absolute;
       top: 50%;
-      width: 100%;
+      left: 100%;
+      width: 200px;
       height: 1px;
       background-color: #63d1bb;
       content: "";
       z-index: -1;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-top: 18px;
   }
 }
 

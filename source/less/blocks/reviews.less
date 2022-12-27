@@ -22,10 +22,14 @@
     padding: 0 50px;
 
     background-color: #ffffff;
-    background-image: url("../img/reviews/review-tablet.jpg");
+    background-image: url("../img/reviews/review.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews/review@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {

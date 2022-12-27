@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
   <title>Мишка - магазин товаров ручной работы</title>
 </head>
@@ -111,9 +114,9 @@
         </div>
         <div class="bestseller__image-wrapper">
           <picture>
-            <source srcset="img/bestseller/baskets-desktop.jpg" type="image/webp" media="(min-width: 1150px)">
-            <source srcset="img/bestseller/baskets-tablet.jpg" type="image/webp" media="(min-width: 768px)">
-            <img src="img/bestseller/baskets-mobile.jpg" alt="Вязаные корзинки ручной работы">
+            <source srcset="img/bestseller/baskets-desktop.jpg 1x, img/bestseller/baskets-desktop@2x.jpg 2x" type="image/webp" media="(min-width: 1150px)">
+            <source srcset="img/bestseller/baskets-tablet.jpg 1x, img/bestseller/baskets-tablet@2x.jpg 2x" type="image/webp" media="(min-width: 768px)">
+            <img src="img/bestseller/baskets-mobile.jpg" width="260" height="215" srcset="img/bestseller/baskets-mobile@2x.jpg 2x" alt="Вязаные корзинки ручной работы">
           </picture>
         </div>
         <footer class="bestseller__footer">
