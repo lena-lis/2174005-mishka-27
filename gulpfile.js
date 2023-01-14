@@ -90,7 +90,6 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/img/logos/*.svg',
-    'source/img/*.svg',
     'source/*.ico',
     'source/*.webmanifest',
   ], {
@@ -102,7 +101,7 @@ const copy = (done) => {
 
 // Clean
 
-const clean = () => {
+export const clean = () => {
   return del('build');
 };
 
