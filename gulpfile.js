@@ -144,7 +144,7 @@ export const build = gulp.series(
   html,
   scripts,
   svg,
- sprite,
+  sprite,
   createWebp
   ),
   );
