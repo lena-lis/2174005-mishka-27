@@ -26,6 +26,12 @@
   grid-template-columns: [td] 75px [td] 183px;
   column-gap: 2px;
 
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-of-type) {
+      margin-bottom: 28px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     grid-template-columns: [td] 75px [td] 220px;
     column-gap: 3px;
