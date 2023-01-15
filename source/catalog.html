@@ -172,7 +172,7 @@
         <div class="manufacture__info">
           <p class="manufacture__description">По просьбам наших любимых фолловеров мы сняли
             для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="manufacture__button button button--primary" type="button">Сделать заказ</button>
+          <button class="manufacture__button button button--primary button--modal" type="button">Сделать заказ</button>
         </div>
       </div>
     </section>
@@ -230,6 +230,7 @@
   <!--Модальное окно-->
 
   <div class="modal-container modal-container--closed">
+    <div class="modal-overlay" data-backdrop="static"></div>
     <div class="modal-bestseller modal">
       <section class="modal__content">
         <h2 class="modal__title">Добавить в корзину</h2>
@@ -263,6 +264,7 @@
     </div>
   </div>
 
+  <script src="./js/modal.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

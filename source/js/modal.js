@@ -1,11 +1,15 @@
-let orderButton = document.querySelector(".bestseller__button");
 let modalContainer = document.querySelector(".modal-container");
+let overlay = document.querySelector(".modal-overlay");
+let orderButton = document.querySelector(".button--modal");
 
-modalContainer.classList.add("modal-container--closed");
-
-orderButton.addEventListener("click", function () {
-  if (modalContainer.classList.contains(".modal-container--closed")) {
-    modalContainer.classList.remove(".modal-container--closed");
-    modalContainer.classList.add("modal-container--opened");
-  }
+orderButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  modalContainer.classList.remove("modal-container--closed");
+  modalContainer.classList.add("modal-container--opened");
 });
+
+overlay.addEventListener('click', function() {
+  modalContainer.classList.remove("modal-container--opened");
+  modalContainer.classList.add("modal-container--closed");
+});
+

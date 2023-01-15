@@ -123,7 +123,7 @@
         </div>
         <footer class="bestseller__footer">
           <p class="bestseller__price">Цена: 990 руб.</p>
-          <button class="bestseller__button button button--primary" type="button">Заказать</button>
+          <button class="bestseller__button button button--primary button--modal" type="button">Заказать</button>
         </footer>
       </div>
     </section>
@@ -250,7 +250,8 @@
 
   <!--Модальное окно-->
 
-  <div class="modal-container">
+  <div class="modal-container modal-container--closed">
+    <div class="modal-overlay" data-backdrop="static"></div>
     <div class="modal-bestseller modal">
       <section class="modal__content">
         <h2 class="modal__title">Добавить в корзину</h2>
