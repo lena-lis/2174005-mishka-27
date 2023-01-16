@@ -78,8 +78,9 @@
   order: 2;
 
   @media (min-width: @tablet-width) {
-    align-self: center;
     width: min-content;
+    margin-top: 6px;
+    margin-right: 28px;
     line-height: 17px;
     text-align: center;
   }
@@ -142,10 +143,12 @@
   @media (min-width: @tablet-width) {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
+    margin-top: 12px;
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 0;
     grid-column: 4 / -1;
     grid-row: 1 / -1;
   }
@@ -154,7 +157,10 @@
 .bestseller__description {
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 38px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -167,20 +173,23 @@
 
 .bestseller__price {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
   text-align: center;
   color: #444444;
 
   @media (min-width: @tablet-width) {
+    margin-top: 9px;
+    margin-bottom: 32px;
     font-size: 20px;
   }
 }
 
 .bestseller__button {
   width: 100%;
-  padding: 16px 0;
+  padding: 15px 0;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 12px;
     font-size: 17px;
   }
 }

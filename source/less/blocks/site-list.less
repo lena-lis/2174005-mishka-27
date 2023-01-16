@@ -9,12 +9,12 @@
 }
 
 .site-list__item {
-  padding: 27px 30px 27px 76px;
+  padding: 29px 30px 27px 76px;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 22px;
+    padding-top: 20px;
     order: 2;
     box-shadow: none;
   }
@@ -36,6 +36,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
   }
 
   @media (min-width: @desktop-width) {
