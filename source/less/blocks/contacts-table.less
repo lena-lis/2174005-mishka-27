@@ -11,12 +11,12 @@
   tbody {
     @media (min-width: @tablet-width) {
       display: flex;
-      column-gap: 51px;
+      column-gap: 35px;
     }
 
     @media (min-width: @desktop-width) {
       flex-direction: column;
-      row-gap: 23px;
+      row-gap: 28px;
     }
   }
 }
@@ -56,6 +56,14 @@
   &:active {
     color: #62d1ba;
     text-decoration: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    text-underline-offset: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-underline-offset: 13px;
   }
 }
 

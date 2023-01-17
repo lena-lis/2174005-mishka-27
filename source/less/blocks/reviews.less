@@ -34,16 +34,16 @@
 
   @media (min-width: @desktop-width) {
     width: 1118px;
-    padding-left: 170px;
+    padding-left: 175px;
     padding-right: 66px;
 
     &::after {
       position: absolute;
-      top: 114%;
+      top: 114.5%;
       left: 0;
-      width: 100%;
+      width: 1052px;
       height: 23px;
-      background-image: url("../img/bestseller/wave-thin.svg");
+      background-image: url("../img/bestseller/wave-thin-desktop.svg");
       background-position-x: center;
       background-repeat: repeat-x;
       background-size: auto 23px;
@@ -99,7 +99,11 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 44px;
-    padding-right: 68px;
+    padding-right: 62px;
+
+    br:first-of-type {
+      display: inline;
+    }
   }
 }
 
@@ -132,15 +136,15 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    right: 50px;
-    bottom: 66px;
+    right: 48px;
+    bottom: 49px;
 
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    right: 66px;
-    bottom: 111px;
+    right: 65px;
+    bottom: 98px;
   }
 }
 

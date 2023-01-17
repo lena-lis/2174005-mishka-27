@@ -2,11 +2,19 @@
   display: flex;
   align-items: center;
   column-gap: 27px;
+
+  @media (min-width: @tablet-width) {
+    column-gap: 26px;
+  }
 }
 
 .copyright__text {
   font-size: 19px;
   line-height: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .copyright__link {
@@ -30,4 +38,8 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (min-width: @tablet-width) {
+    top: -4px;
+  }
 }

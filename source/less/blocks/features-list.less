@@ -6,6 +6,10 @@
     column-gap: 10px;
     grid-auto-flow: column;
   }
+
+  @media (min-width: @desktop-width) {
+    column-gap: 25px;
+  }
 }
 
 .features-list__item {
@@ -69,7 +73,8 @@
 
 
   @media (min-width: @tablet-width) {
-    padding-top: 110px;
+    padding-top: 97px;
+    padding-bottom: 15px;
     font-size: 20px;
     line-height: 22px;
 
@@ -78,11 +83,11 @@
     }
 
     &--style::before {
-      top: 57px;
+      top: 42px;
     }
 
     &--like::before {
-      top: 63px;
+      top: 46px;
     }
 
     &--handmade::before {
@@ -90,11 +95,35 @@
     }
 
     &--native::before {
-      top: 59px;
+      top: 45px;
     }
 
     &--present::before {
-      top: 58px;
+      top: 42px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 96px;
+
+    &--eco::before {
+      top: 39px;
+    }
+
+    &--style::before {
+      top: 41px;
+    }
+
+    &--handmade::before {
+      top: 43px;
+    }
+
+    &--native::before {
+      top: 44px;
+    }
+
+    &--present::before {
+      top: 42px;
     }
   }
 }
