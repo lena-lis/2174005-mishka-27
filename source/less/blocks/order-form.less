@@ -33,13 +33,21 @@
 
 .order-form__group {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   padding: 0;
   border: none;
 
   @media (max-width: @mobile-width-only) {
+    &--name {
+      margin-bottom: 29px;
+    }
+
+    &--comment {
+      margin-bottom: 0;
+    }
+
     &--type .order-form__title-line {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
       padding-right: 22px;
     }
 
@@ -49,7 +57,8 @@
     }
 
     &--name .order-form__title-line {
-      margin-bottom: 28px;
+      margin-top: 8px;
+      margin-bottom: 29px;
       padding-right: 18px;
     }
 
@@ -91,6 +100,10 @@
 }
 
 .order-form__group--contacts {
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 30px;
+  }
+
   @media (min-width: @desktop-width) {
     display: block;
 
@@ -132,14 +145,6 @@
       padding-right: 28px;
     }
 
-    &--email {
-      padding-right: 19px;
-
-      &::before {
-        width: 182px;
-      }
-    }
-
     &::before {
       position: absolute;
       top: 50%;
@@ -150,6 +155,15 @@
       content: "";
       z-index: -1;
     }
+
+    &--email {
+      padding-right: 19px;
+
+      &::before {
+        width: 183px;
+      }
+    }
+
   }
 
   @media (min-width: @tablet-width) {
@@ -164,7 +178,7 @@
 
 .order-form__item {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -197,8 +211,8 @@
 }
 
 .order-form__legend {
-  margin-top: 17px;
-  margin-bottom: 30px;
+  margin-top: 6px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -227,7 +241,9 @@
 }
 
 .order-form__button {
-  padding: 18px 40px;
+  width: 100%;
+  padding: 14px 0;
+  font-size: 17px;
 
   @media (min-width: @desktop-width) {
     margin-left: 175px;
@@ -235,6 +251,7 @@
 }
 
 .order-form__field-wrapper .field {
+  padding-top: 15px;
   padding-right: 62px;
 
   @media (min-width: @tablet-width) {
@@ -255,14 +272,14 @@
 
   &--phone {
     top: 11px;
-    right: 17px;
+    right: 7px;
     width: 25px;
     height: 24px;
   }
 
   &--email {
     top: 16px;
-    right: 15px;
+    right: 3px;
     width: 32px;
     height: 21px;
   }
