@@ -12,4 +12,3 @@ overlay.addEventListener('click', function() {
   modalContainer.classList.remove("modal-container--opened");
   modalContainer.classList.add("modal-container--closed");
 });
-
