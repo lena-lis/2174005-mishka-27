@@ -30,12 +30,12 @@
 .manufacture__title {
   position: relative;
   margin: 0;
-  padding: 22px 40px 26px 91px;
+  padding: 22px 40px 24px 91px;
 
   &::before {
     position: absolute;
     top: 34px;
-    left: 35px;
+    left: 33px;
 
     width: 32px;
     height: 22px;
@@ -52,7 +52,7 @@
 
     &::before {
       top: 39px;
-      left: 42px;
+      left: 41px;
     }
   }
 
@@ -126,11 +126,12 @@
 
 .manufacture__info {
   box-sizing: border-box;
-  padding: 34px;
+  padding: 32px;
+  padding-top: 34px;
   border: 1px solid #ececec;
 
   @media (min-width: @tablet-width) {
-    padding: 0 42px 46px;
+    padding: 0 39px 46px;
     border-top: none;
   }
 
@@ -151,7 +152,9 @@
   color: #444444;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
     font-size: 15px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -161,11 +164,17 @@
 }
 
 .manufacture__button {
-  padding: 18px 17px;
+  width: 100%;
+  padding: 16px 0;
   line-height: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
-    padding: 18px 0;
+    padding: 16px 0;
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: unset;
+    padding: 16px 43px;
   }
 }

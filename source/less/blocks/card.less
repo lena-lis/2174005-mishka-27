@@ -31,12 +31,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    padding: 26px 32px 26px 34px;
+    padding: 26px 32px 26px 32px;
   }
 
   @media (min-width: @desktop-width) {
     height: 100%;
-    padding: 26px 27px;
+    padding: 27px;
+    padding-right: 30px;
   }
 }
 
@@ -45,12 +46,17 @@
 
   & .card__title {
     margin-bottom: 7px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 3px;
+      padding-right: 40px;
+    }
   }
 }
 
 .card__title {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 
   @media (min-width: @desktop-width) {
     margin-bottom: 6px;
@@ -84,7 +90,7 @@
 .card__order {
   display: flex;
   justify-content: space-between;
-  padding-top: 23px;
+  padding-top: 18px;
   border-top: 1px solid #ececec;
 
   @media (min-width: @tablet-width) {
