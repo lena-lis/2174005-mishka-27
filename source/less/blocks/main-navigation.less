@@ -126,6 +126,10 @@
       right: 0;
       bottom: 100%;
     }
+
+    @media (min-width: @desktop-width) {
+      right: 3px;
+    }
   }
 
   &--site {
@@ -149,7 +153,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    padding-top: 22px;
+    padding-top: 19px;
     order: 3;
     z-index: 10;
   }
@@ -161,6 +165,7 @@
 
 .main-navigation__delivery-link {
   font-size: 15px;
+  font-weight: 400;
   color: #444444;
   text-decoration: none;
 }

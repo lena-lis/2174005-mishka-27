@@ -11,12 +11,12 @@
   tbody {
     @media (min-width: @tablet-width) {
       display: flex;
-      column-gap: 51px;
+      column-gap: 35px;
     }
 
     @media (min-width: @desktop-width) {
       flex-direction: column;
-      row-gap: 23px;
+      row-gap: 28px;
     }
   }
 }
@@ -25,6 +25,12 @@
   display: grid;
   grid-template-columns: [td] 75px [td] 183px;
   column-gap: 2px;
+
+  @media (max-width: @mobile-width-only) {
+    &:not(:last-of-type) {
+      margin-bottom: 28px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     grid-template-columns: [td] 75px [td] 220px;
@@ -50,6 +56,14 @@
   &:active {
     color: #62d1ba;
     text-decoration: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    text-underline-offset: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-underline-offset: 13px;
   }
 }
 

@@ -138,7 +138,7 @@
                 <img class="card__image" src="img/product-card/card-toy-basket.jpg" width="260" height="195" srcset="img/product-card/card-toy-basket@2x.jpg 2x" alt="Большая корзинка для игрушек">
               </picture>
             </a>
-            <div class="card__info">
+            <div class="card__info card__info--toy-basket">
               <h3 class="card__title">
                 <a class="card__title-link" href="#">Большая корзинка для игрушек</a>
               </h3>
@@ -172,7 +172,7 @@
         <div class="manufacture__info">
           <p class="manufacture__description">По просьбам наших любимых фолловеров мы сняли
             для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="manufacture__button button button--primary" type="button">Сделать заказ</button>
+          <button class="manufacture__button button button--primary button--modal" type="button">Сделать заказ</button>
         </div>
       </div>
     </section>
@@ -216,7 +216,7 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__logo-icon" aria-hidden="true" focusable="false" width="27" height="34">
             <use href="img/sprite.svg#icon-academy"></use>
@@ -229,7 +229,8 @@
 
   <!--Модальное окно-->
 
-  <div class="modal-container modal-container--close">
+  <div class="modal-container modal-container--closed">
+    <div class="modal-overlay" data-backdrop="static"></div>
     <div class="modal-bestseller modal">
       <section class="modal__content">
         <h2 class="modal__title">Добавить в корзину</h2>
@@ -263,6 +264,7 @@
     </div>
   </div>
 
+  <script src="./js/modal.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

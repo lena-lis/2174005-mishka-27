@@ -24,7 +24,7 @@
     &::after {
       position: absolute;
       top: 46px;
-      right: 50px;
+      right: 53px;
 
       width: 47px;
       height: 81px;
@@ -40,7 +40,7 @@
     display: grid;
     grid-template-columns: 1fr 527px;
     grid-template-rows: 136px 1fr 52px;
-    column-gap: 53px;
+    column-gap: 28px;
 
     width: 1050px;
     min-height: 457px;
@@ -54,7 +54,7 @@
 
 .contacts__title {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   padding: 0 30px;
 
   font-size: 25px;
@@ -62,7 +62,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 46px;
-    padding: 68px 50px 0;
+    padding: 69px 50px 0;
 
     font-size: 43px;
     line-height: 50px;
@@ -79,22 +79,27 @@
 }
 
 .contacts__table {
-  margin-bottom: 62px;
+  margin-bottom: 59px;
   padding: 0 30px;
+  padding-left: 26px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 49px;
-    padding: 0 50px;
+    margin-bottom: 45px;
+    padding: 0 47px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    padding: 35px 0 85px 174px;
+    padding: 32px 0 81px 171px;
   }
 }
 
 .contacts__map-container {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 
   @media (min-width: @desktop-width) {
     grid-column: 2 / -1;
@@ -119,9 +124,10 @@
 
 .contacts__button {
   margin: 0 auto;
-  padding: 16px 38px;
+  padding: 14px 50px;
 
   @media (min-width: @tablet-width) {
+    padding: 14px 39px;
     font-size: 17px;
   }
 
